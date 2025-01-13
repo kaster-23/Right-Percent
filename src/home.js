@@ -483,7 +483,9 @@ function home() {
       toggleActions: "play none none reverse",
     }
   });
-  // TESTIMONIAL 
+  // 
+
+
 
   // Testimonial animation
   window.addEventListener('load', function () {
@@ -627,6 +629,13 @@ function home() {
 
     // large
     "(min-width: 992px)": function () {
+
+          let st = ScrollTrigger.create({
+            trigger: ".c-sticky-wrapper",
+            pin: ".c-sticky-left-wrapper",
+            start: "top center",
+            end: "bottom 100%",
+          });
 
       // hero
       gsap.fromTo(".cc-header", {
@@ -839,7 +848,12 @@ function home() {
     },
     // medium
     "(min-width: 768px) and (max-width: 991px)": function () {
-
+       let st = ScrollTrigger.create({
+          trigger: ".c-sticky-wrapper",
+          pin: ".c-sticky-left-wrapper",
+          start: "top center",
+          end: "bottom 100%",
+        });
       // header 
       gsap.fromTo(".cc-header-mob", {
         y: '5rem',
