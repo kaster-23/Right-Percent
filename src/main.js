@@ -7,12 +7,12 @@ import home from './home.js'
 
 import contact from './contact.js'
 
-import source from './source.js'
+import sources from './sources.js'
 //import blogtemplate from './blogtemplate.js'
 
 const pages = {
   'body--home': home,
-  'body--source': source,
+  'body--sources': sources,
   'body--contact': contact,
   // 'body--blogtemplate': blogtemplate
 };
