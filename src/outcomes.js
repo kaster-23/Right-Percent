@@ -3,6 +3,15 @@
 
     // large
     "(min-width: 992px)": function () {
+          let st = ScrollTrigger.create({
+            trigger: ".c-sticky-wrapper",
+            pin: ".c-sticky-left-wrapper",
+            start: "top center",
+            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 145}`,
+            pinSpacing: false,
+          });
+
+     
       // Marquee on scroll
 
       gsap.to(".c-scroll-marquee-wrapper", {
