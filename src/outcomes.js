@@ -1,4 +1,36 @@
 function outcomes() {
+   // anim hero
+
+  gsap.fromTo(".c-text-wrapper.cc-hero-one", {
+    y: '5rem',
+    opacity: 0,
+  }, {
+    y: '0rem',
+    delay: 0,
+    duration: 0.8,
+    opacity: 1,
+  });
+
+  gsap.fromTo(".c-text-wrapper.cc-hero-two", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    delay: 0.6,
+    duration: 0.8,
+    opacity: 1,
+  });
+
+  gsap.fromTo(".c-button-wrapper.cc-hero", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    delay: 1,
+    duration: 0.8,
+    opacity: 1,
+  });
+ 
  // growth animation
 
   gsap.fromTo(".c-text-wrapper.cc-growth", {
