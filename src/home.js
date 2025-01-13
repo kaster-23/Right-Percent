@@ -635,7 +635,6 @@ function home() {
             pin: ".c-sticky-left-wrapper",
             start: "top center",
             end: "bottom 100%",
-            pinSpacing: false
           });
 
       // hero
