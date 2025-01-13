@@ -110,7 +110,7 @@ function home() {
   });
 
   // split type 
-  window.onload = function () {
+ /* window.onload = function () {
 
     var container = document.querySelector('[split-container]');
     container.style.display = 'block';
@@ -129,7 +129,7 @@ function home() {
       stagger: 0.1,
       ease: 'power1.out',
     })
-  };
+  };*/
 
   gsap.fromTo(".c-logo-grid", {
     y: '5rem',
