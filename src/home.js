@@ -634,7 +634,7 @@ function home() {
             trigger: ".c-sticky-wrapper",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 190}`,
+            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 170}`,
             pinSpacing: false,
           });
 
