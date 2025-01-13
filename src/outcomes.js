@@ -1,4 +1,85 @@
 function outcomes() {
+ // growth animation
+
+  gsap.fromTo(".c-text-wrapper.cc-growth", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '.c-text-wrapper.cc-growth',
+      start: 'bot 95%',
+      toggleActions: "play none none reverse",
+    }
+  });
+
+  gsap.fromTo(".c-growth-cards-container.cc-one", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: '.c-growth-cards-container.cc-one',
+      start: 'bot 85%',
+      toggleActions: "play none none reverse",
+    }
+  });
+
+  gsap.fromTo(".c-growth-cards-container.cc-two", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    delay: 0.6,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: '.c-growth-cards-container.cc-two',
+      start: 'bot 85%',
+      toggleActions: "play none none reverse",
+    }
+  });
+
+  gsap.fromTo(".c-growth-cards-container.cc-three", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    delay: 0.9,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: '.c-growth-cards-container.cc-three',
+      start: 'bot 85%',
+      toggleActions: "play none none reverse",
+    }
+  });
+
+  gsap.fromTo(".c-growth-cards-container.cc-four", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    delay: 1.2,
+    ease: "bounce.out",
+    scrollTrigger: {
+      trigger: '.c-growth-cards-container.cc-four',
+      start: 'bot 85%',
+      toggleActions: "play none none reverse",
+    }
+  });
+  // 
+
+ 
  ScrollTrigger.matchMedia({
 
     // large
