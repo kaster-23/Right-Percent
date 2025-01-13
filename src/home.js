@@ -703,7 +703,7 @@ function home() {
       }, '<');
 
       ballTl.to('.c-bg-wrapper', {
-        backgroundColor: '#62C6A5'
+        backgroundColor: '#A1DDC9'
       });
 
       ballTl.to(ball, {
@@ -917,7 +917,7 @@ function home() {
       }, '<');
 
       ballTl.to('.c-bg-wrapper', {
-        backgroundColor: '#62C6A5'
+        backgroundColor: '#A1DDC9'
       });
 
       ballTl.to(ball, {
@@ -1129,7 +1129,7 @@ function home() {
       }, '<');
 
       ballTl.to('.c-bg-wrapper', {
-        backgroundColor: '#62C6A5'
+        backgroundColor: '#A1DDC9'
       });
 
       ballTl.to(ball, {
