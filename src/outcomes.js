@@ -27,6 +27,13 @@
     },
     // medium
     "(min-width: 767px) and (max-width: 991px)": function () {
+            let st = ScrollTrigger.create({
+          trigger: ".c-sticky-wrapper",
+          pin: ".c-sticky-left-wrapper",
+          start: "top center",
+          end: "bottom bottom",
+        });
+     
       // Marquee on scroll
 
       gsap.to(".c-scroll-marquee-wrapper", {
