@@ -7,13 +7,15 @@ import home from './home.js'
 import contact from './contact.js'
 import getAudit from './getAudit.js'
 import blog from './blog.js'
+import outcomes from './outcomes.js'
 //import blogtemplate from './blogtemplate.js'
 
 const pages = {
   'body--homerp': home,
   'body--blog': blog,
   'body--contact': contact,
-  'body-getaudit': getAudit
+  'body-getaudit': getAudit,
+  'body--outcomes': outcomes
   // 'body--blogtemplate': blogtemplate
 };
 
