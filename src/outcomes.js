@@ -1,4 +1,4 @@
-
+function outcomes() {
  ScrollTrigger.matchMedia({
 
     // large
@@ -65,3 +65,7 @@
 
     },
   })
+
+}
+
+export default outcomes;
