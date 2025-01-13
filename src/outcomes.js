@@ -31,85 +31,6 @@ function outcomes() {
     opacity: 1,
   });
  
- // growth animation
-
-  gsap.fromTo(".c-text-wrapper.cc-growth", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: '.c-text-wrapper.cc-growth',
-      start: 'bot 95%',
-      toggleActions: "play none none reverse",
-    }
-  });
-
-  gsap.fromTo(".c-growth-cards-container.cc-one", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    opacity: 1,
-    ease: "bounce.out",
-    scrollTrigger: {
-      trigger: '.c-growth-cards-container.cc-one',
-      start: 'bot 85%',
-      toggleActions: "play none none reverse",
-    }
-  });
-
-  gsap.fromTo(".c-growth-cards-container.cc-two", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    opacity: 1,
-    delay: 0.6,
-    ease: "bounce.out",
-    scrollTrigger: {
-      trigger: '.c-growth-cards-container.cc-two',
-      start: 'bot 85%',
-      toggleActions: "play none none reverse",
-    }
-  });
-
-  gsap.fromTo(".c-growth-cards-container.cc-three", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    opacity: 1,
-    delay: 0.9,
-    ease: "bounce.out",
-    scrollTrigger: {
-      trigger: '.c-growth-cards-container.cc-three',
-      start: 'bot 85%',
-      toggleActions: "play none none reverse",
-    }
-  });
-
-  gsap.fromTo(".c-growth-cards-container.cc-four", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    opacity: 1,
-    delay: 1.2,
-    ease: "bounce.out",
-    scrollTrigger: {
-      trigger: '.c-growth-cards-container.cc-four',
-      start: 'bot 85%',
-      toggleActions: "play none none reverse",
-    }
-  });
-  // 
 
  
  ScrollTrigger.matchMedia({
@@ -137,6 +58,47 @@ function outcomes() {
         ease: "quart.easeOut",
       });
 
+        // GROWING IMG CTA FOOTER
+
+      gsap.to(".c-img-cta-footer.cc-one", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '300%',
+        scaleY: '300%',
+        x: "21rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-two", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '900%',
+        scaleY: '900%',
+        x: "-20rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-three", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '780%',
+        scaleY: '780%',
+        x: "-10rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
+    },
+
     },
     // medium
     "(min-width: 767px) and (max-width: 991px)": function () {
@@ -159,7 +121,45 @@ function outcomes() {
         ease: "quart.easeOut",
       });
 
+ // GROWING IMG CTA FOOTER
 
+      gsap.to(".c-img-cta-footer.cc-one", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '400%',
+        scaleY: '400%',
+        x: "21rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-two", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '600%',
+        scaleY: '600%',
+        x: "-10rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-three", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '380%',
+        scaleY: '380%',
+        x: "-10rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
     },
     // small
     "(max-width: 480px)": function () {
@@ -174,7 +174,45 @@ function outcomes() {
         xPercent: -80,
         ease: "quart.easeOut",
       });
+  // GROWING IMG CTA FOOTER
 
+      gsap.to(".c-img-cta-footer.cc-one", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '200%',
+        scaleY: '200%',
+        x: "10rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-two", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '350%',
+        scaleY: '350%',
+        x: "-10rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
+
+      gsap.to(".c-img-cta-footer.cc-three", {
+        scrollTrigger: {
+          trigger: ".c-cta-footer-wrapper",
+          start: "top 100%",
+          scrub: true,
+        },
+        scaleX: '280%',
+        scaleY: '280%',
+        x: "0rem",
+        y: "5rem",
+        ease: "quart.easeOut",
+      });
 
     },
   })
