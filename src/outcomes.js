@@ -98,8 +98,6 @@ function outcomes() {
         ease: "quart.easeOut",
       });
     },
-
-    },
     // medium
     "(min-width: 767px) and (max-width: 991px)": function () {
             let st = ScrollTrigger.create({
@@ -214,7 +212,7 @@ function outcomes() {
         ease: "quart.easeOut",
       });
 
-    },
+    }
   })
 
 }
