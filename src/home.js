@@ -633,7 +633,7 @@ function home() {
           let st = ScrollTrigger.create({
             trigger: ".c-sticky-wrapper",
             pin: ".c-sticky-left-wrapper",
-            start: "top top",
+            start: "top center",
             end: "bottom 100%",
           });
 
