@@ -4,9 +4,8 @@ import { ScrollTrigger, ScrollSmoother } from "./gsap/all.js";
 
 
 import home from './home.js'
-
 import contact from './contact.js'
-
+import getAudit from './getAudit.js'
 import blog from './blog.js'
 //import blogtemplate from './blogtemplate.js'
 
@@ -14,6 +13,7 @@ const pages = {
   'body--homerp': home,
   'body--blog': blog,
   'body--contact': contact,
+  'body-getaudit': getAudit
   // 'body--blogtemplate': blogtemplate
 };
 
