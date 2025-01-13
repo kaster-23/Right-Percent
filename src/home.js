@@ -634,7 +634,7 @@ function home() {
             trigger: ".c-sticky-wrapper",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            end: "bottom top",
+            end: "bottom 100%",
             pinSpacing: false
           });
 
