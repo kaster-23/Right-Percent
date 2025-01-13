@@ -634,7 +634,8 @@ function home() {
             trigger: ".c-sticky-wrapper",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            end: "bottom 100%",
+            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight}`,
+            pinSpacing: false,
           });
 
       // hero
