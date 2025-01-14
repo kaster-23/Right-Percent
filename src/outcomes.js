@@ -90,17 +90,14 @@ function textApparition(target) {
 
 // List target selectors
 const targetSelectors = [
-  '.cc-top-fade-in',
-  '.c-sticky-right-container',
-  '.c-title-wrapper'
+  '.cc-top-fade-in'
 ];
 
 // Apply animation to each element individually
-targetSelectors.forEach(selector => {
-  document.querySelectorAll(selector).forEach(element => {
+
+  document.querySelectorAll('.cc-top-fade-in').forEach(element => {
     textApparition(element);
   });
-});
 
  
  ScrollTrigger.matchMedia({
