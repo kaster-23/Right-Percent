@@ -72,7 +72,7 @@ function outcomes() {
  
 
 // Tag us text animation
-function textApparition(target) {
+function textApparition(target, start) {
   gsap.fromTo(target, {
     y: '5rem',
     opacity: 0
@@ -82,7 +82,7 @@ function textApparition(target) {
     opacity: 1,
     scrollTrigger: {
       trigger: target,        
-      start: 'bottom bottom',
+      start: start || 'bottom bottom',
       toggleActions: 'play none none reverse'
     }
   });
@@ -95,6 +95,9 @@ const targetSelectors = [
 
 // Apply animation to each element individually
 
+ document.querySelectorAll('.cc-top-fade-in-block').forEach(element => {
+    textApparition(element, 'top 90%');
+  });
   document.querySelectorAll('.cc-top-fade-in').forEach(element => {
     textApparition(element);
   });
