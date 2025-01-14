@@ -28,3 +28,71 @@ Object.keys(pages).forEach(pageClass => {
     pages[pageClass]();
   }
 });
+
+  // FOOTER CHART ANIM
+
+  gsap.to(".c-img-chart-footer.cc-one", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-11rem',
+    ease: "quart.easeOut",
+  });
+
+  gsap.to(".c-img-chart-footer.cc-two", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-20rem',
+    ease: "quart.easeOut",
+  });
+
+  gsap.to(".c-img-chart-footer.cc-three", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-7rem',
+    ease: "quart.easeOut",
+  });
+
+  gsap.to(".c-img-chart-footer.cc-four", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-2.5rem',
+    ease: "quart.easeOut",
+  });
+
+  gsap.to(".c-img-chart-footer.cc-five", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-6rem',
+    ease: "quart.easeOut",
+  });
+
+  gsap.to(".c-img-chart-footer.cc-six", {
+    scrollTrigger: {
+      trigger: ".c-chart-footer-wrapper",
+      start: "top 100%",
+      end: "bottom -10%",
+      scrub: true,
+    },
+    y: '-11rem',
+    ease: "quart.easeOut",
+  });
