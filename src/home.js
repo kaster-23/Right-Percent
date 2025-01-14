@@ -84,7 +84,7 @@ function home() {
     opacity: 0,
   }, {
     y: '0rem',
-    delay: 0,
+    delay: .2,
     duration: 0.8,
     opacity: 1,
   });
