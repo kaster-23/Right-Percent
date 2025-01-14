@@ -149,6 +149,10 @@ function home() {
     delay: 1.5,
     duration: 0.8,
     opacity: 1,
+    scrollTrigger: {          
+      start: "top 80%",     
+      toggleActions: "play none none reverse"
+    }
   });
 
   // anim img hero
