@@ -10,7 +10,7 @@ function home() {
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
     let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',
+      wrapper: '.smooth-wrapper',https://right-percent-staging.webflow.io/client-outcomes
       content: '.smooth-content',
       smooth: 1,
       smoothTouch: 0.1,
@@ -150,7 +150,7 @@ function home() {
     duration: 0.8,
     opacity: 1,
     scrollTrigger: {          
-      start: "top center",     
+      start: "top 50%",     
       toggleActions: "play none none reverse"
     }
   });
