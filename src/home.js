@@ -151,7 +151,7 @@ function home() {
     opacity: 1,
     scrollTrigger: {
       trigger: '.c-logo-grid',
-      start: "top 50%",     
+      start: "top 80%",     
       toggleActions: "play none none reverse"
     }
   });
