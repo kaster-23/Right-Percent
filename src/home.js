@@ -10,7 +10,7 @@ function home() {
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
     let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',https://right-percent-staging.webflow.io/client-outcomes
+      wrapper: '.smooth-wrapper',
       content: '.smooth-content',
       smooth: 1,
       smoothTouch: 0.1,
