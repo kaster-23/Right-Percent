@@ -52,7 +52,7 @@ function outcomes() {
   // List target
   const targets = [
     '.cc-top-fade-in',
-   'h2'
+   //'h2'
   ];
 
   // Create the animation for each target
