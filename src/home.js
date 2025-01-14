@@ -638,7 +638,7 @@ function home() {
           { 
             y: "0rem",               
             opacity: 1,
-            delay: .5,
+            delay: .8,
             duration: 0.8,
             stagger: 0.1,
             ease: "power2.out",
