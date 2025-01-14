@@ -157,6 +157,7 @@ function textApparition(target, start) {
     opacity: 0
   }, {
     y: '0rem',
+    delay: .3,
     duration: 0.8,
     opacity: 1,
     scrollTrigger: {
