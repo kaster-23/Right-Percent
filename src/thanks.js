@@ -6,6 +6,7 @@ function thanks() {
   }, {
     y: '0rem',
     duration: 0.8,
+    delay: 0.3,
     opacity: 1,
     scrollTrigger: {
       trigger: '.c-hero-blog-img-wrapper',
