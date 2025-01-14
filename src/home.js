@@ -99,6 +99,16 @@ function home() {
     opacity: 1,
   });
 
+    gsap.fromTo(".c-text-wrapper.cc-hero-three", {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    delay: 0.10,
+    duration: 0.8,
+    opacity: 1,
+  });
+  
   gsap.fromTo(".c-button-wrapper.cc-hero", {
     y: '5rem',
     opacity: 0
