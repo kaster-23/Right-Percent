@@ -356,7 +356,7 @@ function home() {
   ];
 
   // Create the animation for each target
-  targets.forEach(target => textApparition(target));
+  targets.forEach((element) => document.querySelectorAll(element).forEach(target => textApparition(target)));
 
   // tag us line growing
 
