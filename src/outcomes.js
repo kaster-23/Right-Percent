@@ -77,7 +77,7 @@ function outcomes() {
       opacity: 1,
       scrollTrigger: {
         trigger: targetSelector,
-        start: 'bot 95%',
+        start: 'bottom 95%',
         toggleActions: 'play none none reverse'
       }
     });
@@ -86,7 +86,7 @@ function outcomes() {
   // List target
   const targets = [
     '.cc-top-fade-in',
-   //'h2'
+    'h2'
   ];
 
   // Create the animation for each target
