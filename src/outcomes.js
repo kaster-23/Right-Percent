@@ -193,7 +193,25 @@ const targetSelectors = [
             start: "top center",
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 145}`,
             pinSpacing: false,
-          });
+        });
+
+        gsap.fromTo(".hero-highligts_item", 
+          { y: "5rem", opacity: 0 },
+          { 
+            y: "0rem",               
+            opacity: 1,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {          
+              trigger: ".hero-highlights_wrapper",  
+              start: "top 80%",     
+              toggleActions: "play none none reverse" 
+            }
+          }
+        );
+
+        
 
      
       // Marquee on scroll
