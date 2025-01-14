@@ -357,7 +357,8 @@ function home() {
     '.cc-tag-twelve',
     '.cc-tag-thirteen',
     '.cc-tag-fourteen',
-    '.cc-top-fade-in'
+    '.cc-top-fade-in',
+    '.c-button-primary'
   ];
 
   // Create the animation for each target
