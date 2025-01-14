@@ -633,7 +633,22 @@ function home() {
     ease: "quart.easeOut",
   });
 
-
+        gsap.fromTo(".hero-highligts_item", 
+          { y: "5rem", opacity: 0 },
+          { 
+            y: "0rem",               
+            opacity: 1,
+            delay: .5,
+            duration: 0.8,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {          
+              trigger: ".hero-highlights_wrapper",  
+              start: "top 80%",     
+              toggleActions: "play none none reverse" 
+            }
+          }
+        );
   // responsive
 
   ScrollTrigger.matchMedia({
@@ -660,22 +675,7 @@ function home() {
         opacity: 1,
       });
 
-        gsap.fromTo(".hero-highligts_item", 
-          { y: "5rem", opacity: 0 },
-          { 
-            y: "0rem",               
-            opacity: 1,
-            delay: .5,
-            duration: 0.8,
-            stagger: 0.1,
-            ease: "power2.out",
-            scrollTrigger: {          
-              trigger: ".hero-highlights_wrapper",  
-              start: "top 80%",     
-              toggleActions: "play none none reverse" 
-            }
-          }
-        );
+
 
 
 
