@@ -82,7 +82,7 @@ function textApparition(target) {
     opacity: 1,
     scrollTrigger: {
       trigger: target,        
-      start: 'bottom 95%',
+      start: 'bottom 80%',
       toggleActions: 'play none none reverse'
     }
   });
