@@ -30,6 +30,24 @@ function getAudit() {
       }, 300)
     })
   })
+  
+  // Testimonial animation
+  window.addEventListener('load', function () {
+    gsap.utils.toArray(".c-testimonial-container").forEach((element, index) => {
+      gsap.from(element, {
+        opacity: 0,
+        y: "6.25rem",
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: element,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+          stagger: 0.2 * index
+        }
+      });
+    });
+  });
 
   // BG nav dropdown open
 
