@@ -32,6 +32,31 @@ function outcomes() {
   });
  
 
+     // Tag us text animation
+  function textApparition(targetSelector) {
+    gsap.fromTo(targetSelector, {
+      y: '5rem',
+      opacity: 0
+    }, {
+      y: '0rem',
+      duration: 0.8,
+      opacity: 1,
+      scrollTrigger: {
+        trigger: targetSelector,
+        start: 'bot 95%',
+        toggleActions: 'play none none reverse'
+      }
+    });
+  }
+
+  // List target
+  const targets = [
+    '.c-text-wrapper',
+  ];
+
+  // Create the animation for each target
+  targets.forEach(target => textApparition(target));
+
  
  ScrollTrigger.matchMedia({
 
