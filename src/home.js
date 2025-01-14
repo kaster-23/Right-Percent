@@ -564,7 +564,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-11rem',
+    y: '-5.5rem',
     ease: "quart.easeOut",
   });
 
@@ -575,7 +575,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-20rem',
+    y: '-10rem',
     ease: "quart.easeOut",
   });
 
@@ -586,7 +586,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-7rem',
+    y: '-3.5rem',
     ease: "quart.easeOut",
   });
 
@@ -597,7 +597,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-2rem',
+    y: '-1rem',
     ease: "quart.easeOut",
   });
 
@@ -608,7 +608,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-6rem',
+    y: '-3rem',
     ease: "quart.easeOut",
   });
 
@@ -619,7 +619,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-11rem',
+    y: '-5.5rem',
     ease: "quart.easeOut",
   });
 
