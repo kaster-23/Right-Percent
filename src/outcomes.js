@@ -91,7 +91,8 @@ function textApparition(target) {
 // List target selectors
 const targetSelectors = [
   '.cc-top-fade-in',
-  'h2'
+  'h2',
+  '.c-title-wrapper'
 ];
 
 // Apply animation to each element individually
