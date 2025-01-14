@@ -71,7 +71,7 @@ Object.keys(pages).forEach(pageClass => {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-2.5rem',
+    y: '-2rem',
     ease: "quart.easeOut",
   });
 
