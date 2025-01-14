@@ -601,7 +601,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '7rem',
+    y: '-7rem',
     ease: "quart.easeOut",
   });
 
@@ -612,7 +612,7 @@ function home() {
       end: "bottom -10%",
       scrub: true,
     },
-    y: '-4rem',
+    y: '-3rem',
     ease: "quart.easeOut",
   });
 
