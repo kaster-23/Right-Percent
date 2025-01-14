@@ -91,7 +91,7 @@ function textApparition(target) {
 // List target selectors
 const targetSelectors = [
   '.cc-top-fade-in',
-  'h2',
+  '.c-sticky-right-container',
   '.c-title-wrapper'
 ];
 
