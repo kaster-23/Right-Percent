@@ -8,6 +8,7 @@ import contact from './contact.js'
 import getAudit from './getAudit.js'
 import blog from './blog.js'
 import outcomes from './outcomes.js'
+import thanks from './thanks.js'
 //import blogtemplate from './blogtemplate.js'
 
 const pages = {
@@ -15,7 +16,8 @@ const pages = {
   'body--blog': blog,
   'body--contact': contact,
   'body-getaudit': getAudit,
-  'body--outcomes': outcomes
+  'body--outcomes': outcomes,
+  'body--thanks': thanks
   // 'body--blogtemplate': blogtemplate
 };
 
