@@ -149,7 +149,8 @@ function home() {
     delay: 1.5,
     duration: 0.8,
     opacity: 1,
-    scrollTrigger: {          
+    scrollTrigger: {
+      trigger: '.c-logo-grid',
       start: "top 50%",     
       toggleActions: "play none none reverse"
     }
