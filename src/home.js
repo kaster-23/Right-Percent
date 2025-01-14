@@ -146,7 +146,7 @@ function home() {
     opacity: 0
   }, {
     y: '0rem',
-    delay: 1.5,
+    delay: .2,
     duration: 0.8,
     opacity: 1,
     scrollTrigger: {
@@ -577,8 +577,8 @@ function home() {
           { 
             y: "0rem",               
             opacity: 1,
-            delay: .8,
-            duration: 0.8,
+            delay: 1,
+            duration: 1,
             stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {          
