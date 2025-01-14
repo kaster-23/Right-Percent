@@ -39,73 +39,7 @@ function outcomes() {
   ScrollTrigger.addEventListener("refresh", setupSplits);
   setupSplits();
 
-      // FOOTER CHART ANIM
-
-  gsap.to(".c-img-chart-footer.cc-one", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-5.5rem',
-    ease: "quart.easeOut",
-  });
-
-  gsap.to(".c-img-chart-footer.cc-two", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-10rem',
-    ease: "quart.easeOut",
-  });
-
-  gsap.to(".c-img-chart-footer.cc-three", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-3.5rem',
-    ease: "quart.easeOut",
-  });
-
-  gsap.to(".c-img-chart-footer.cc-four", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-1rem',
-    ease: "quart.easeOut",
-  });
-
-  gsap.to(".c-img-chart-footer.cc-five", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-3rem',
-    ease: "quart.easeOut",
-  });
-
-  gsap.to(".c-img-chart-footer.cc-six", {
-    scrollTrigger: {
-      trigger: ".c-chart-footer-wrapper",
-      start: "top 100%",
-      end: "bottom -10%",
-      scrub: true,
-    },
-    y: '-5.5rem',
-    ease: "quart.easeOut",
-  });
+  
     
    // anim hero
 
