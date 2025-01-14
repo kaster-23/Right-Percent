@@ -71,31 +71,35 @@ function outcomes() {
   });
  
 
-     // Tag us text animation
-  function textApparition(targetSelector) {
-    gsap.fromTo(targetSelector, {
-      y: '5rem',
-      opacity: 0
-    }, {
-      y: '0rem',
-      duration: 0.8,
-      opacity: 1,
-      scrollTrigger: {
-        trigger: targetSelector,
-        start: 'bottom 95%',
-        toggleActions: 'play none none reverse'
-      }
-    });
-  }
+// Tag us text animation
+function textApparition(target) {
+  gsap.fromTo(target, {
+    y: '5rem',
+    opacity: 0
+  }, {
+    y: '0rem',
+    duration: 0.8,
+    opacity: 1,
+    scrollTrigger: {
+      trigger: target,        
+      start: 'bottom 95%',
+      toggleActions: 'play none none reverse'
+    }
+  });
+}
 
-  // List target
-  const targets = [
-    '.cc-top-fade-in',
-    'h2'
-  ];
+// List target selectors
+const targetSelectors = [
+  '.cc-top-fade-in',
+  'h2'
+];
 
-  // Create the animation for each target
-  targets.forEach(target => textApparition(target));
+// Apply animation to each element individually
+targetSelectors.forEach(selector => {
+  document.querySelectorAll(selector).forEach(element => {
+    textApparition(element);
+  });
+});
 
  
  ScrollTrigger.matchMedia({
