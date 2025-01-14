@@ -1,3 +1,8 @@
+
+import { SplitText } from "./gsap/all.js";
+
+
+gsap.registerPlugin(SplitText);
 function outcomes() {
     // anim Fast txt
 
