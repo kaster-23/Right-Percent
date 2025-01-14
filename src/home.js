@@ -150,7 +150,7 @@ function home() {
     duration: 0.8,
     opacity: 1,
     scrollTrigger: {          
-      start: "top 80%",     
+      start: "top center",     
       toggleActions: "play none none reverse"
     }
   });
