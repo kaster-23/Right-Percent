@@ -23,9 +23,7 @@ function blogtemplate() {
       effects: true
     });
 
-      setTimeout(() => {
         ScrollTrigger.refresh();
-      }, 100);
   })
 
 document.addEventListener('DOMContentLoaded', () => {
