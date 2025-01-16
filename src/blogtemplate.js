@@ -106,7 +106,7 @@ function blogtemplate() {
             ease: "power2.out",
             scrollTrigger: {          
               trigger: ".resources-cms_list",  
-              start: "top 80%",     
+              start: "top 60%",     
               toggleActions: "play none none reverse" 
             }
           }
