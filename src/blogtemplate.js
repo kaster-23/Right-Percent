@@ -123,6 +123,9 @@ function blogtemplate() {
 
   // Collection cards
 Webflow.push(function () {
+   const items = document.querySelectorAll(".collection-item.resources-cms_wrapper");
+  
+  if (items.length > 0) {
         gsap.fromTo(".collection-item.resources-cms_wrapper", 
           { y: "5rem", opacity: 0 },
           { 
@@ -139,6 +142,7 @@ Webflow.push(function () {
             }
           }
         );
+  }
 })
   // MARQUEE ON SCROLL
 
