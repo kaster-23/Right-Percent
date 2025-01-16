@@ -122,7 +122,7 @@ function blogtemplate() {
   targets.forEach((element) => document.querySelectorAll(element).forEach(target => elementApparition(target)));
 
   // Collection cards
-
+Webflow.push(function () {
         gsap.fromTo(".collection-item.resources-cms_wrapper", 
           { y: "5rem", opacity: 0 },
           { 
@@ -139,7 +139,7 @@ function blogtemplate() {
             }
           }
         );
-
+})
   // MARQUEE ON SCROLL
 
   gsap.to(".c-scroll-marquee-wrapper", {
