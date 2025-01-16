@@ -133,8 +133,8 @@ function blogtemplate() {
             stagger: 0.1,
             ease: "power2.out",
             scrollTrigger: {          
-              trigger: ".c-home-article-container",  
-              start: "top 60%",     
+              trigger: ".c-blog-article-container",  
+              start: "top 70%",     
               toggleActions: "play none none reverse" 
             }
           }
