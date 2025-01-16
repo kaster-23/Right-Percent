@@ -9,18 +9,7 @@ function blogtemplate() {
  // Webflow.push(function () {
 
   // smooth scroll
-  document.addEventListener('load', () => {
 
-    let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',
-      content: '.smooth-content',
-      smooth: 1,
-      smoothTouch: 0.1,
-      effects: true
-    });
-
-    ScrollTrigger.refresh();
-  })
 
 document.addEventListener('DOMContentLoaded', () => {
   // refresh scrolltrigger
