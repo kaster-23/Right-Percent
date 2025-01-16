@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
           { 
             y: "0rem",               
             opacity: 1,
-            delay: 1,
+            delay: .2,
             duration: 1,
             stagger: 0.1,
             ease: "power2.out",
