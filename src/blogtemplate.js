@@ -9,8 +9,7 @@ function blogtemplate() {
  // Webflow.push(function () {
 
   // smooth scroll
-  document.addEventListener('DOMContentLoaded', () => {
-     document.body.style.height = `${document.querySelector('.smooth-content').scrollHeight}px`;
+  document.addEventListener('load', () => {
 
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
@@ -21,9 +20,9 @@ function blogtemplate() {
     });
 
     ScrollTrigger.refresh();
+  })
 
-
-
+document.addEventListener('DOMContentLoaded', () => {
   // refresh scrolltrigger
   let links = document.querySelectorAll(".cc-refresh")
   links.forEach(link => {
