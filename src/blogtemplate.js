@@ -19,7 +19,9 @@ function blogtemplate() {
       effects: true
     });
 
-    ScrollTrigger.refresh();
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 100);
   })
 
 document.addEventListener('DOMContentLoaded', () => {
