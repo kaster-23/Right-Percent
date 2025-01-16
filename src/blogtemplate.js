@@ -93,6 +93,25 @@ function blogtemplate() {
     }
   });
 
+  // Collection cards
+
+        gsap.fromTo(".collection-item.resources-cms_wrapper", 
+          { y: "5rem", opacity: 0 },
+          { 
+            y: "0rem",               
+            opacity: 1,
+            delay: 1,
+            duration: 1,
+            stagger: 0.1,
+            ease: "power2.out",
+            scrollTrigger: {          
+              trigger: ".resources-cms_list",  
+              start: "top 80%",     
+              toggleActions: "play none none reverse" 
+            }
+          }
+        );
+
   // MARQUEE ON SCROLL
 
   gsap.to(".c-scroll-marquee-wrapper", {
