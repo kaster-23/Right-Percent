@@ -9,7 +9,7 @@ function blogtemplate() {
  // Webflow.push(function () {
 
   // smooth scroll
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('load', () => {
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
