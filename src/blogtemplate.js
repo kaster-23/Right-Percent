@@ -138,7 +138,7 @@ function blogtemplate() {
             ease: "power2.out",
             scrollTrigger: {          
               trigger: ".c-blog-article-container",  
-              start: "top 70%",     
+              start: "top 80%",     
               toggleActions: "play none none reverse" 
             }
           }
