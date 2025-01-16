@@ -119,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // List target
   const targets = [
     '.cc-top-fade-in',
-    'figure'
     //'.button-wrapper-center'
   ];
 
