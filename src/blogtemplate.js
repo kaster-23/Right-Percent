@@ -11,6 +11,10 @@ function blogtemplate() {
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
 
+   document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('load', () => ScrollTrigger.refresh());
+  });
+
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
