@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // BG nav dropdown open
 
-  document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll(".c-dropdown");
     const navBg = document.querySelector(".c-nav-bg-open");
     let lastOpenedDropdown = null;
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
           lastOpenedDropdown = dropdown;
         }
       });
-    });
+
 
     document.addEventListener("click", (event) => {
       if (!event.target.classList.contains("c-dropdown")) {
