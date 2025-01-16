@@ -115,7 +115,7 @@ function blogtemplate() {
   // List target
   const targets = [
     '.cc-top-fade-in',
-    '.w-richtext-align-fullwidth'
+    '.figure'
     //'.button-wrapper-center'
   ];
 
