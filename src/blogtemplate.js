@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         opacity: 1,
         scrollTrigger: {
           trigger: targetSelector,
-          start: 'bot 65%',
+          start: 'bot 75%',
           toggleActions: 'play none none reverse'
         }
       });
