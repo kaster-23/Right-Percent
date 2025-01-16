@@ -10,6 +10,8 @@ function blogtemplate() {
 
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
+     document.body.style.height = `${document.querySelector('.smooth-content').scrollHeight}px`;
+
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
