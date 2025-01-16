@@ -6,6 +6,7 @@ import { SplitText } from "./gsap/all.js";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 function blogtemplate() {
+ // Webflow.push(function () {
 
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
@@ -19,7 +20,7 @@ function blogtemplate() {
 
     ScrollTrigger.refresh();
 
-  });
+
 
   // refresh scrolltrigger
   let links = document.querySelectorAll(".cc-refresh")
@@ -122,7 +123,7 @@ function blogtemplate() {
   targets.forEach((element) => document.querySelectorAll(element).forEach(target => elementApparition(target)));
 
   // Collection cards
-Webflow.push(function () {
+
    const items = document.querySelectorAll(".collection-item.resources-cms_wrapper");
   
   if (items.length > 0) {
@@ -143,7 +144,6 @@ Webflow.push(function () {
           }
         );
   }
-})
   // MARQUEE ON SCROLL
 
   gsap.to(".c-scroll-marquee-wrapper", {
@@ -274,7 +274,7 @@ Webflow.push(function () {
 
     },
   })
-
+  });
 }
 
 export default blogtemplate
