@@ -17,7 +17,7 @@ const pages = {
   'body--contact': contact,
   'body-getaudit': getAudit,
   'body--outcomes': outcomes,
-  'body--thanks': thanks
+  'body--thanks': thanks,
   'body--blogtemplate': blogtemplate
 };
 
