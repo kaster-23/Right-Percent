@@ -9,7 +9,7 @@ import getAudit from './getAudit.js'
 import blog from './blog.js'
 import outcomes from './outcomes.js'
 import thanks from './thanks.js'
-//import blogtemplate from './blogtemplate.js'
+import blogtemplate from './blogtemplate.js'
 
 const pages = {
   'body--homerp': home,
@@ -18,7 +18,7 @@ const pages = {
   'body-getaudit': getAudit,
   'body--outcomes': outcomes,
   'body--thanks': thanks
-  // 'body--blogtemplate': blogtemplate
+  'body--blogtemplate': blogtemplate
 };
 
 const bodyClassList = document.querySelector('body').classList;
