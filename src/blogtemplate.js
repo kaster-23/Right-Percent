@@ -105,7 +105,7 @@ function blogtemplate() {
         opacity: 1,
         scrollTrigger: {
           trigger: targetSelector,
-          start: 'bot 95%',
+          start: 'bot 65%',
           toggleActions: 'play none none reverse'
         }
       });
