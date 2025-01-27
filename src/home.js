@@ -637,79 +637,73 @@ function home() {
 
       // splitTextTl.set('.cc-split-chars', { opacity: 0 });
 
-      const ball = document.querySelector('[yellow-ball]');
-      let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
-      window.addEventListener('resize', () => document.documentElement.clientWidth / ball.getBoundingClientRect().width);
+     const ball = document.querySelector('[yellow-ball]');
+let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
+window.addEventListener('resize', () => document.documentElement.clientWidth / ball.getBoundingClientRect().width);
 
-      // timeline main (ballTl)
-      const ballTl = gsap.timeline({
-        scrollTrigger: {
-          trigger: '[yellow-ball-section]',
-          pin: true,
-          start: "top 10%",
-          end: '+=3000',
-          scrub: 0,
-        },
-        // onUpdate: () => {
-        //   // Start splitTextTl at the end of ballTl
-        //   splitTextTl.restart()
-        //   splitTextTl.set('.cc-split-chars', { opacity: 1 });
-        // },
-      });
+const ballTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: '[yellow-ball-section]',
+    pin: true,
+    start: "top 10%",
+    end: '+=3000',
+    scrub: 0,
+  },
+});
 
-      // add animations to the main timeline (ballTl)
-      ballTl.to(ball, {
-        left: '100vw',
-        rotate: '360deg',
-        duration: 40,
-      });
+ballTl.to(ball, {
+  left: '100vw',
+  rotate: '360deg',
+  duration: 26,
+});
 
-      ballTl.to(ball, {
-        scale: scaleVal * 2.5,
-        top: '50rem',
-        rotate: '270deg',
-        duration: 40,
-      }, '>');
+ballTl.to(ball, {
+  scale: scaleVal * 2.5,
+  top: '50rem',
+  rotate: '270deg',
+  duration: 39,
+}, '>');
 
-      ballTl.to('.c-fast-txt-wrapper.cc-one', {
-        opacity: 0,
-        duration: 30,
-      }, '<');
+ballTl.to('.c-fast-txt-wrapper.cc-one', {
+  opacity: 0,
+  duration: 19.5,
+}, '<');
 
-      ballTl.to('.c-yellow-circle-bg', {
-        opacity: 0,
-        duration: 30,
-      }, '<');
+ballTl.to('.c-yellow-circle-bg', {
+  opacity: 0,
+  duration: 19.5,
+}, '<');
 
-      ballTl.to('.c-bg-wrapper', {
-        backgroundColor: '#A1DDC9'
-      });
+ballTl.to('.c-bg-wrapper', {
+  backgroundColor: '#A1DDC9',
+});
 
-      ballTl.to(ball, {
-        opacity: 0,
-      });
+ballTl.to(ball, {
+  opacity: 0,
+});
 
-      ballTl.to(".c-fast-cards-wrapper", {
-        opacity: 1,
-      });
+ballTl.to(".c-fast-cards-wrapper", {
+  opacity: 1,
+});
 
-      ballTl.fromTo(".cc-split-chars", {
-        scale: 0,
-        opacity: 0
-      }, {
-        scale: 1,
-        duration: 6,
-        opacity: 1,
-      });
+ballTl.fromTo(".cc-split-chars", {
+  scale: 0,
+  opacity: 0,
+}, {
+  scale: 1,
+  duration: 3.9,
+  opacity: 1,
+});
 
-      ballTl.fromTo(".swiper", {
-        scale: 0,
-        opacity: 0
-      }, {
-        scale: 1,
-        duration: 6,
-        opacity: 1,
-      });
+ballTl.fromTo(".swiper", {
+  scale: 0,
+  opacity: 0,
+}, {
+  scale: 1,
+  duration: 3.9,
+  opacity: 1,
+});
+
 
       const swiper = new Swiper(".swiper", {
         effect: "cards",
