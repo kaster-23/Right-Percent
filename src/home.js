@@ -609,8 +609,8 @@ function home() {
   stickyTexts.forEach((text, index) => {
   ScrollTrigger.create({
     trigger: text, 
-    start: "top center", 
-    end: "bottom center", 
+    start: "top 50%", 
+    end: "bottom 50%", 
     onEnter: () => {
       stickyTexts.forEach((t) => t.style.color = "#fff"); 
       text.style.color = "#62C6A5"; 
