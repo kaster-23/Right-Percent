@@ -125,7 +125,7 @@ const targetSelectors = [
             trigger: ".c-sticky-wrapper .row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight}`,
+            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 75}`,
             pinSpacing: false,
           });
 
@@ -145,7 +145,7 @@ const targetSelectors = [
         
           ScrollTrigger.create({
             trigger: title, 
-            start: "top 60%", 
+            start: "top 55%", 
             end: "bottom center", 
             trigger: container,
             onEnter: () => {
@@ -160,7 +160,7 @@ const targetSelectors = [
         
           ScrollTrigger.create({
             trigger: text, 
-            start: "top 60%", 
+            start: "top 55%", 
             end: "bottom center", 
             trigger: container,
             onEnter: () => {
