@@ -598,7 +598,7 @@ function home() {
     "(min-width: 992px)": function () {
 
           let st = ScrollTrigger.create({
-            trigger: ".c-sticky-wrapper",
+            trigger: ".c-sticky-wrapper.row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 145}`,
