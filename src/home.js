@@ -32,11 +32,6 @@ function home() {
   })
 
 
-
-  window.addEventListener("resize", () => {
-  ScrollTrigger.refresh();
-});
-
   // BG nav dropdown open
 
   document.addEventListener("DOMContentLoaded", function () {
