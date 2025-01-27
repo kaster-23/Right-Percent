@@ -615,6 +615,10 @@ function home() {
       stickyTexts.forEach((t) => t.style.color = "#fff"); 
       text.style.color = "#62C6A5"; 
     },
+    onEnterBack: () => {
+      stickyTexts.forEach((t) => t.style.color = "#fff"); 
+      text.style.color = "#62C6A5"; 
+    },
   });
 });
 
