@@ -605,6 +605,27 @@ function home() {
             pinSpacing: false,
           });
 
+  document.querySelectorAll('.c-sticky-right-container .c-text-m, .c-sticky-right-container .c-title-s').forEach((text, index) => {
+  ScrollTrigger.create({
+    trigger: text, 
+    start: "top center", 
+    end: "bottom center", 
+    onEnter: () => {
+      text.style.color = "black"; 
+    },
+    onLeave: () => {
+      text.style.color = "gray";
+    },
+    onEnterBack: () => {
+      text.style.color = "black";
+    },
+    onLeaveBack: () => {
+      text.style.color = "gray"; 
+    }
+  });
+});
+
+
       // hero
       gsap.fromTo(".cc-header", {
         y: '5rem',
