@@ -608,19 +608,19 @@ function home() {
   document.querySelectorAll('.c-sticky-right-container .c-text-m, .c-sticky-right-container .c-title-s').forEach((text, index) => {
   ScrollTrigger.create({
     trigger: text, 
-    start: "top center", 
-    end: "bottom center", 
+    start: "top 70%", 
+    end: "bottom 75%", 
     onEnter: () => {
-      text.style.color = "black"; 
+      text.style.color = "#62C6A5"; 
     },
     onLeave: () => {
-      text.style.color = "gray";
+      text.style.color = "#fff";
     },
     onEnterBack: () => {
-      text.style.color = "black";
+      text.style.color = "#62C6A5";
     },
     onLeaveBack: () => {
-      text.style.color = "gray"; 
+      text.style.color = "#fff"; 
     }
   });
 });
