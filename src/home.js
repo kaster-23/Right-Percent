@@ -617,11 +617,11 @@ const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-tit
 
 sticktContainers.forEach((container) => {
   const title = container.querySelector('.c-title-s')
-  const text = container.querySelectorAll('.c-text-m')
+  const text = container.querySelector('.c-text-m')
 
   ScrollTrigger.create({
     trigger: title, 
-    start: "top center", 
+    start: "top 60%", 
     end: "bottom center", 
     trigger: container,
     onEnter: () => {
@@ -636,7 +636,7 @@ sticktContainers.forEach((container) => {
 
   ScrollTrigger.create({
     trigger: text, 
-    start: "top center", 
+    start: "top 60%", 
     end: "bottom center", 
     trigger: container,
     onEnter: () => {
