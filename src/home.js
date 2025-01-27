@@ -668,7 +668,7 @@ function home() {
         scale: scaleVal * 2.5,
         top: '50rem',
         rotate: '270deg',
-        duration: 60,
+        duration: 40,
       }, '>');
 
       ballTl.to('.c-fast-txt-wrapper.cc-one', {
