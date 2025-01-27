@@ -605,7 +605,7 @@ function home() {
             pinSpacing: false,
           });
 
-  const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m)
+  const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m')
   stickyTexts.forEach((text, index) => {
   ScrollTrigger.create({
     trigger: text, 
