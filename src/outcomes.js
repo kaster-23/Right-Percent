@@ -125,7 +125,7 @@ const targetSelectors = [
             trigger: ".c-sticky-wrapper .row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 145}`,
+            end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight}`,
             pinSpacing: false,
           });
 
