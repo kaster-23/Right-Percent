@@ -605,7 +605,7 @@ function home() {
             pinSpacing: false,
           });
 
-  const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m, .c-sticky-right-container .c-title-s')
+  const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m)
   stickyTexts.forEach((text, index) => {
   ScrollTrigger.create({
     trigger: text, 
@@ -617,6 +617,24 @@ function home() {
     },
     onEnterBack: () => {
       stickyTexts.forEach((t) => t.style.color = "#fff"); 
+      text.style.color = "#62C6A5"; 
+    },
+  });
+});
+      
+  const stickyTitle = document.querySelectorAll('.c-sticky-right-container .c-title-s')
+
+  stickyTitle.forEach((text, index) => {
+  ScrollTrigger.create({
+    trigger: text, 
+    start: "top 70%", 
+    end: "top 60%", 
+    onEnter: () => {
+      stickyTitle.forEach((t) => t.style.color = "#fff"); 
+      text.style.color = "#62C6A5"; 
+    },
+    onEnterBack: () => {
+      stickyTitle.forEach((t) => t.style.color = "#fff"); 
       text.style.color = "#62C6A5"; 
     },
   });
