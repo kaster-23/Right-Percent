@@ -605,40 +605,53 @@ function home() {
             pinSpacing: false,
           });
 
-  const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m')
-  stickyTexts.forEach((text, index) => {
-  ScrollTrigger.create({
-    trigger: text, 
-    start: "top center", 
-    end: "bottom center", 
-    onEnter: () => {
-      stickyTexts.forEach((t) => t.style.color = "#fff"); 
-      text.style.color = "#62C6A5"; 
-    },
-    onEnterBack: () => {
-      stickyTexts.forEach((t) => t.style.color = "#fff"); 
-      text.style.color = "#62C6A5"; 
-    },
-  });
-});
-      
-  const stickyTitle = document.querySelectorAll('.c-sticky-right-container .c-title-s')
 
-  stickyTitle.forEach((text, index) => {
+      
+  
+
+const sticktContainers = document.querySelectorAll(".c-sticky-right-container");
+const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m')
+const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-title-s')
+
+  
+
+sticktContainers.forEach((container) => {
+  const title = container.querySelector('.c-title-s')
+  const text = container.querySelectorAll('.c-text-m')
+
+  ScrollTrigger.create({
+    trigger: title, 
+    start: "top center", 
+    end: "bottom center", 
+    trigger: container,
+    onEnter: () => {
+      stickyTitles.forEach((t) => t.style.color = "#fff"); 
+      title.style.color = "#62C6A5"; 
+    },
+    onEnterBack: () => {
+      stickyTitles.forEach((t) => t.style.color = "#fff"); 
+      title.style.color = "#62C6A5"; 
+    },
+  });
+
   ScrollTrigger.create({
     trigger: text, 
     start: "top center", 
     end: "bottom center", 
+    trigger: container,
     onEnter: () => {
-      stickyTitle.forEach((t) => t.style.color = "#fff"); 
+      stickyTexts.forEach((t) => t.style.color = "#fff"); 
       text.style.color = "#62C6A5"; 
     },
     onEnterBack: () => {
-      stickyTitle.forEach((t) => t.style.color = "#fff"); 
+      stickyTexts.forEach((t) => t.style.color = "#fff"); 
       text.style.color = "#62C6A5"; 
     },
   });
-});
+  
+})
+
+
 
 
       // hero
