@@ -609,7 +609,7 @@ function home() {
   ScrollTrigger.create({
     trigger: text, 
     start: "top 70%", 
-    end: "bottom 75%", 
+    end: "top 75%", 
     onEnter: () => {
       text.style.color = "#62C6A5"; 
     },
