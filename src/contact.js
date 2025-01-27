@@ -77,20 +77,6 @@ function contact() {
 
   // anim txt hero
 
-  gsap.fromTo(".c-text-container", {
-    y: '5rem',
-    opacity: 0
-  }, {
-    y: '0rem',
-    duration: 0.8,
-    delay: 0.3,
-    opacity: 1,
-    scrollTrigger: {
-      trigger: '.c-text-container',
-      start: 'bot 85%',
-      toggleActions: "play none none reverse",
-    }
-  });
 
   gsap.fromTo(".c-contact-form-wrapper", {
     y: '5rem',
