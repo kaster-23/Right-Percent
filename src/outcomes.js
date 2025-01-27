@@ -122,12 +122,58 @@ const targetSelectors = [
     // large
     "(min-width: 992px)": function () {
           let st = ScrollTrigger.create({
-            trigger: ".c-sticky-wrapper",
+            trigger: ".c-sticky-wrapper .row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 145}`,
             pinSpacing: false,
-        });
+          });
+
+
+      
+  
+
+            const sticktContainers = document.querySelectorAll(".c-sticky-right-container");
+            const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m')
+            const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-title-s')
+
+  
+
+        sticktContainers.forEach((container) => {
+          const title = container.querySelector('.c-title-s')
+          const text = container.querySelector('.c-text-m')
+        
+          ScrollTrigger.create({
+            trigger: title, 
+            start: "top 60%", 
+            end: "bottom center", 
+            trigger: container,
+            onEnter: () => {
+              stickyTitles.forEach((t) => t.style.color = "#fff"); 
+              title.style.color = "#62C6A5"; 
+            },
+            onEnterBack: () => {
+              stickyTitles.forEach((t) => t.style.color = "#fff"); 
+              title.style.color = "#62C6A5"; 
+            },
+          });
+        
+          ScrollTrigger.create({
+            trigger: text, 
+            start: "top 60%", 
+            end: "bottom center", 
+            trigger: container,
+            onEnter: () => {
+              stickyTexts.forEach((t) => t.style.color = "#fff"); 
+              text.style.color = "#62C6A5"; 
+            },
+            onEnterBack: () => {
+              stickyTexts.forEach((t) => t.style.color = "#fff"); 
+              text.style.color = "#62C6A5"; 
+            },
+          });
+          
+        })
 
         gsap.fromTo(".hero-highligts_item", 
           { y: "5rem", opacity: 0 },
