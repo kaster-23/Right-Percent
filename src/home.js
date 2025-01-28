@@ -610,14 +610,14 @@ function home() {
   
 
             const sticktContainers = document.querySelectorAll(".c-sticky-right-container");
-            const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-m')
+            const stickyTexts = document.querySelectorAll('.c-sticky-right-container .c-text-s')
             const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-title-s')
 
   
 
         sticktContainers.forEach((container) => {
           const title = container.querySelector('.c-title-s')
-          const text = container.querySelector('.c-text-m')
+          const text = container.querySelector('.c-text-s')
         
           ScrollTrigger.create({
             trigger: title, 
