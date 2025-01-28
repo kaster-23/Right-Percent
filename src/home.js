@@ -9,23 +9,14 @@ function home() {
 
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
-    let smoother
-    if (window.innerWidth < 768) {
-      smoother = ScrollSmoother.create({
-        wrapper: '.smooth-wrapper',
-        content: '.smooth-content',
-        smooth: 0,
-        smoothTouch: false
-      });
-    } else {
-      smoother = ScrollSmoother.create({
+    let smoother = ScrollSmoother.create({
         wrapper: '.smooth-wrapper',
         content: '.smooth-content',
         smooth: 1,
         smoothTouch: false, 
         effects: true
       });
-    }
+    
     ScrollTrigger.refresh();
 
   });
