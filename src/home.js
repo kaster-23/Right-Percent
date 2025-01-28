@@ -690,8 +690,19 @@ function home() {
 
      const ball = document.querySelector('[yellow-ball]');
 let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
-window.addEventListener('resize', () => document.documentElement.clientWidth / ball.getBoundingClientRect().width);
+      
+let previousWidth = document.documentElement.clientWidth;
 
+window.addEventListener('resize', () => {
+    const currentWidth = document.documentElement.clientWidth;
+    
+    if (currentWidth !== previousWidth) {
+        const ratio = currentWidth / ball.getBoundingClientRect().width;
+        console.log('Ratio:', ratio);
+        previousWidth = currentWidth; 
+    }
+});
+      
 const ballTl = gsap.timeline({
   scrollTrigger: {
     trigger: '[yellow-ball-section]',
@@ -903,7 +914,17 @@ ballTl.fromTo(".swiper", {
 
       const ball = document.querySelector('[yellow-ball]');
       let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
-      window.addEventListener('resize', () => document.documentElement.clientWidth / ball.getBoundingClientRect().width);
+      let previousWidth = document.documentElement.clientWidth;
+
+      window.addEventListener('resize', () => {
+          const currentWidth = document.documentElement.clientWidth;
+          
+          if (currentWidth !== previousWidth) {
+              const ratio = currentWidth / ball.getBoundingClientRect().width;
+              console.log('Ratio:', ratio);
+              previousWidth = currentWidth; // Actualiza el ancho previo
+          }
+      });
 
       // timeline main (ballTl)
       const ballTl = gsap.timeline({
@@ -1115,7 +1136,16 @@ ballTl.fromTo(".swiper", {
 
       const ball = document.querySelector('[yellow-ball]');
       let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
-      window.addEventListener('resize', () => document.documentElement.clientWidth / ball.getBoundingClientRect().width);
+      let previousWidth = document.documentElement.clientWidth;
+
+      window.addEventListener('resize', () => {
+          const currentWidth = document.documentElement.clientWidth;
+          
+          if (currentWidth !== previousWidth) {
+              const ratio = currentWidth / ball.getBoundingClientRect().width;
+              previousWidth = currentWidth; 
+          }
+      });
 
       // timeline main (ballTl)
       const ballTl = gsap.timeline({
