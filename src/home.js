@@ -1248,7 +1248,7 @@ ballTl.fromTo(".swiper", {
       });
 
       // Inject data testimonial
-
+    /*
       document.addEventListener("DOMContentLoaded", function () {
         const appendOne = document.querySelector("[appendOne]");
         const testimonialOne = document.querySelector("[testimonialOne]");
@@ -1269,7 +1269,7 @@ ballTl.fromTo(".swiper", {
           // Insérez l'élément avec l'attribut [appendOne] après le deuxième élément
           testimonialTwo.insertBefore(appendTwo, testimonialTwo.children[1]);
         }
-      });
+      });*/
 
       // MARQUEE ON SCROLL
 
