@@ -13,7 +13,7 @@ function home() {
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
       smooth: 1,
-      smoothTouch: 0.1,
+      smoothTouch: false, 
       effects: true
     });
 
