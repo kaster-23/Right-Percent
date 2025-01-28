@@ -18,7 +18,10 @@ function home() {
       });
     
     ScrollTrigger.refresh();
-
+    
+    window.addEventListener('resize', () => {
+      ScrollTrigger.refresh();
+    });
   });
 
   // refresh scrolltrigger
