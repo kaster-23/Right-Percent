@@ -9,14 +9,23 @@ function home() {
 
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
-    let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',
-      content: '.smooth-content',
-      smooth: 1,
-      smoothTouch: false, 
-      effects: true
-    });
-
+    let smoother
+    if (window.innerWidth < 768) {
+      smoother = ScrollSmoother.create({
+        wrapper: '.smooth-wrapper',
+        content: '.smooth-content',
+        smooth: 0,
+        smoothTouch: false
+      });
+    } else {
+      smoother = ScrollSmoother.create({
+        wrapper: '.smooth-wrapper',
+        content: '.smooth-content',
+        smooth: 1,
+        smoothTouch: false, 
+        effects: true
+      });
+    }
     ScrollTrigger.refresh();
 
   });
