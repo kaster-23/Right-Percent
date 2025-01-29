@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 function blog() {
 
   // smooth scroll
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('load', () => {
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
