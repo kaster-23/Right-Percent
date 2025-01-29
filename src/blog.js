@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function blog() {
   const blogSection = document.querySelector('#blog');
-  const filterButtons = document.querySelectorAll(".filter-btn");
+  const filterButtons = document.querySelectorAll(".filter-item");
   const cards = document.querySelectorAll(".card");
 
   let triggers = [];
