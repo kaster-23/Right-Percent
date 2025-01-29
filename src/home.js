@@ -1148,7 +1148,7 @@ ballTl.fromTo(".swiper", {
               previousWidth = currentWidth; 
           }
       });
-        /*
+      
       // timeline main (ballTl)
       const ballTl = gsap.timeline({
         scrollTrigger: {
@@ -1218,7 +1218,7 @@ ballTl.fromTo(".swiper", {
         duration: 40,
         opacity: 1,
       });
-
+  /*
       const swiper = new Swiper(".swiper", {
         effect: "cards",
         grabCursor: true,
