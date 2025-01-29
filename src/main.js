@@ -29,6 +29,8 @@ Object.keys(pages).forEach(pageClass => {
   }
 });
 
+/*
+
 ScrollTrigger.matchMedia({
   // Desktop (more than 991px)
   "(min-width: 992px)": function () {
@@ -237,3 +239,4 @@ ScrollTrigger.matchMedia({
     });
   },
 });
+*/
