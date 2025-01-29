@@ -16,6 +16,10 @@ function home() {
         smoothTouch: 0.1, 
         effects: true
       });
+  
+  window.addEventListener("resize", () => {
+    ScrollTrigger.refresh();
+  });
     
     ScrollTrigger.refresh();
     
