@@ -6,29 +6,7 @@ import { SplitText } from "./gsap/all.js";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 function blog() {
-  let smoother;
 
-function initializeScroll() {
-  smoother = ScrollSmoother.create({
-    wrapper: '.smooth-wrapper',
-    content: '.smooth-content',
-    smooth: 1,
-    smoothTouch: 0.1,
-    effects: true,
-  });
-
-  // Refrescar ScrollTrigger
-  ScrollTrigger.refresh();
-}
-
-function destroyScroll() {
-  if (smoother) {
-    smoother.kill();
-    smoother = null;
-  }
-
-  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-}
 
 const blogSection = document.querySelector('#blog')
 function setupPaginationListener() {
@@ -48,7 +26,16 @@ function setupPaginationListener() {
 
   // smooth scroll
   document.addEventListener('load', () => {
-    initializeScroll()
+    let smoother = ScrollSmoother.create({
+      wrapper: '.smooth-wrapper',
+      content: '.smooth-content',
+      smooth: 1,
+      smoothTouch: 0.1,
+      effects: true,
+    });
+
+  // Refrescar ScrollTrigger
+  ScrollTrigger.refresh();
     setupPaginationListener()
 
   });
