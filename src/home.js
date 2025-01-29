@@ -1134,6 +1134,7 @@ ballTl.fromTo(".swiper", {
       // });
 
       // splitTextTl.set('.cc-split-chars', { opacity: 0 });
+         /*
 
       const ball = document.querySelector('[yellow-ball]');
       let scaleVal = document.documentElement.clientWidth / ball.getBoundingClientRect().width;
@@ -1147,7 +1148,7 @@ ballTl.fromTo(".swiper", {
               previousWidth = currentWidth; 
           }
       });
-
+*/
       // timeline main (ballTl)
       const ballTl = gsap.timeline({
         scrollTrigger: {
@@ -1245,7 +1246,7 @@ ballTl.fromTo(".swiper", {
         },
       });
 
-   /*
+
 
       // MARQUEE ON SCROLL
 
@@ -1298,7 +1299,7 @@ ballTl.fromTo(".swiper", {
         y: "5rem",
         ease: "quart.easeOut",
       });
-*/
+
     },
   })
 
