@@ -1219,7 +1219,6 @@ ballTl.fromTo(".swiper", {
         duration: 40,
         opacity: 1,
       });
-*/ 
       
       const swiper = new Swiper(".swiper", {
         effect: "cards",
@@ -1247,6 +1246,7 @@ ballTl.fromTo(".swiper", {
           },
         },
       });
+*/ 
 
 
       // MARQUEE ON SCROLL
