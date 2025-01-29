@@ -1158,9 +1158,10 @@ ballTl.fromTo(".swiper", {
       const ballTl = gsap.timeline({
         scrollTrigger: {
           trigger: '[yellow-ball-section]',
+          pinSpacing: false,
           pin: true,
           start: "top 10%",
-          end: '+=1000',
+          end: '+=800',
           invalidateOnRefresh: true,
           scrub: 1,
         },
@@ -1237,6 +1238,7 @@ ballTl.fromTo(".swiper", {
           trigger: "[yellow-ball-section]",
           start: "top top",
           end: "+=300",
+          pinSpacing: false,
           pin: true,
           invalidateOnRefresh: true,
           scrub: 1,
