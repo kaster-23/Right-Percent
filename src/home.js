@@ -1101,7 +1101,7 @@ ballTl.fromTo(".swiper", {
       });
     },
     // small
-    /*"(max-width: 480px)": function () {
+    "(max-width: 767px)": function () {
 
       // header 
       gsap.fromTo(".cc-header-mob", {
@@ -1245,7 +1245,7 @@ ballTl.fromTo(".swiper", {
         },
       });
 
-   
+   /*
 
       // MARQUEE ON SCROLL
 
@@ -1298,8 +1298,8 @@ ballTl.fromTo(".swiper", {
         y: "5rem",
         ease: "quart.easeOut",
       });
-
-    },*/
+*/
+    },
   })
 
 }
