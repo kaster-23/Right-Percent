@@ -1238,7 +1238,7 @@ ballTl.fromTo(".swiper", {
           trigger: "[yellow-ball-section]",
           start: "top top",
           end: "+=300",
-          //pinSpacing: false,
+          pinSpacing: false,
           pin: true,
           invalidateOnRefresh: true,
           scrub: 1,
