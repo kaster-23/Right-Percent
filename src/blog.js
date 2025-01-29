@@ -73,7 +73,6 @@ function blog() {
     });
 
     ScrollTrigger.refresh();
-    setupPaginationListener();
   });
 
   // Refresh ScrollTrigger when clicking on specific links
