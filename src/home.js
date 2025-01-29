@@ -1101,7 +1101,7 @@ ballTl.fromTo(".swiper", {
       });
     },
     // small
-    "(max-width: 480px)": function () {
+    /*"(max-width: 480px)": function () {
 
       // header 
       gsap.fromTo(".cc-header-mob", {
@@ -1245,29 +1245,7 @@ ballTl.fromTo(".swiper", {
         },
       });
 
-      // Inject data testimonial
-    /*
-      document.addEventListener("DOMContentLoaded", function () {
-        const appendOne = document.querySelector("[appendOne]");
-        const testimonialOne = document.querySelector("[testimonialOne]");
-
-        // Vérifiez s'il existe au moins trois éléments dans testimonialOne
-        if (testimonialOne.children.length >= 2) {
-          // Insérez l'élément avec l'attribut [appendOne] après le deuxième élément
-          testimonialOne.insertBefore(appendOne, testimonialOne.children[2]);
-        }
-      });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const appendTwo = document.querySelector("[appendTwo]");
-        const testimonialTwo = document.querySelector("[testimonialOne]");
-
-        // Vérifiez s'il existe au moins trois éléments dans testimonialOne
-        if (testimonialTwo.children.length >= 3) {
-          // Insérez l'élément avec l'attribut [appendOne] après le deuxième élément
-          testimonialTwo.insertBefore(appendTwo, testimonialTwo.children[1]);
-        }
-      });*/
+   
 
       // MARQUEE ON SCROLL
 
@@ -1321,7 +1299,7 @@ ballTl.fromTo(".swiper", {
         ease: "quart.easeOut",
       });
 
-    },
+    },*/
   })
 
 }
