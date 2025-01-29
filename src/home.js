@@ -826,6 +826,7 @@ ballTl.fromTo(".swiper", {
 
 
       // MARQUEE ON SCROLL
+      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -836,7 +837,7 @@ ballTl.fromTo(".swiper", {
         xPercent: -20,
         ease: "quart.easeOut",
       });
-
+*/
       // GROWING IMG CTA FOOTER
 
       gsap.to(".c-img-cta-footer.cc-one", {
@@ -1053,6 +1054,7 @@ ballTl.fromTo(".swiper", {
       }); */
 
       // MARQUEE ON SCROLL
+      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -1063,6 +1065,7 @@ ballTl.fromTo(".swiper", {
         xPercent: -20,
         ease: "quart.easeOut",
       });
+      */
 
       // GROWING IMG CTA FOOTER
 
@@ -1258,6 +1261,7 @@ ballTl.fromTo(".swiper", {
 
 
       // MARQUEE ON SCROLL
+      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -1268,6 +1272,7 @@ ballTl.fromTo(".swiper", {
         xPercent: -80,
         ease: "quart.easeOut",
       });
+      */
 
       // GROWING IMG CTA FOOTER
 
