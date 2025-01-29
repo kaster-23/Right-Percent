@@ -16,6 +16,7 @@ function setupPaginationListener() {
     button.addEventListener('click', () => {
       setTimeout(() => {
         ScrollTrigger.refresh();
+        console.log('here')
         
         blogSection?.scrollIntoView({ behavior: 'smooth' });
       }, 300); 
