@@ -21,37 +21,54 @@ function blog() {
 
   });
 
-  // Refresh ScrollTrigger on clicks
+  // Function to recreate ScrollSmoother safely
+function recreateScrollSmoother() {
+  console.log("Recreating ScrollSmoother...");
+
+  // Kill old ScrollSmoother instance
+  if (ScrollSmoother.get()) {
+    ScrollSmoother.get().kill();
+  }
+
+  // Recreate ScrollSmoother
+  let smoother = ScrollSmoother.create({
+    wrapper: '.smooth-wrapper',
+    content: '.smooth-content',
+    smooth: 1,
+    smoothTouch: 0.1,
+    effects: true
+  });
+
+  // Refresh ScrollTrigger
+  ScrollTrigger.refresh();
+}
+
+// Refresh ScrollTrigger when navigation elements are clicked
 let links = document.querySelectorAll(".cc-refresh");
 links.forEach(link => {
   link.addEventListener('click', () => {
     setTimeout(() => {
       ScrollTrigger.refresh();
-      if (ScrollSmoother) {
-        ScrollSmoother.get().refresh();
-      }
     }, 300);
   });
 });
 
-// Refresh ScrollTrigger and ScrollSmoother on CMS pagination update
+// Refresh GSAP on CMS pagination update
 window.fsAttributes = window.fsAttributes || [];
 window.fsAttributes.push([
   'cmsload',
   (listInstances) => {
     listInstances.forEach(instance => {
       instance.on('renderitems', () => {
-        console.log('CMS items reloaded');
+        console.log('CMS items reloaded, resetting GSAP...');
 
-        // Force GSAP to recalculate height and animations
-        ScrollTrigger.refresh();
-        if (ScrollSmoother) {
-          ScrollSmoother.get().refresh();
-        }
+        // Reset ScrollSmoother properly
+        recreateScrollSmoother();
       });
     });
   },
 ]);
+
 
 
   // BG nav dropdown open
