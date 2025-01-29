@@ -108,7 +108,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-8rem",
+      y: "-25rem",
       ease: "quart.easeOut",
     });
 
@@ -119,7 +119,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-15rem",
+      y: "-33rem",
       ease: "quart.easeOut",
     });
 
@@ -130,7 +130,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-5rem",
+      y: "-18rem",
       ease: "quart.easeOut",
     });
 
@@ -141,7 +141,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-1rem",
+      y: "-22rem",
       ease: "quart.easeOut",
     });
 
@@ -152,7 +152,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-4rem",
+      y: "-14rem",
       ease: "quart.easeOut",
     });
 
@@ -163,7 +163,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-8rem",
+      y: "-18rem",
       ease: "quart.easeOut",
     });
   },
@@ -221,7 +221,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-2rem",
+      y: "-8rem",
       ease: "quart.easeOut",
     });
 
