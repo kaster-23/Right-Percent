@@ -6,18 +6,48 @@ import { SplitText } from "./gsap/all.js";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 function blog() {
+  let smoother;
+
+function initializeScroll() {
+  smoother = ScrollSmoother.create({
+    wrapper: '.smooth-wrapper',
+    content: '.smooth-content',
+    smooth: 1,
+    smoothTouch: 0.1,
+    effects: true,
+  });
+
+  // Refrescar ScrollTrigger
+  ScrollTrigger.refresh();
+}
+
+function destroyScroll() {
+  if (smoother) {
+    smoother.kill();
+    smoother = null;
+  }
+
+  ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+}
+
+function setupPaginationListener() {
+  
+  const paginationButtons = document.querySelectorAll('.pagination-current'); 
+  paginationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        destroyScroll(); 
+        initializeScroll(); 
+      }, 300); 
+    });
+  });
+}
+
 
   // smooth scroll
   document.addEventListener('load', () => {
-    let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',
-      content: '.smooth-content',
-      smooth: 1,
-      smoothTouch: 0.1,
-      effects: true
-    });
-
-    ScrollTrigger.refresh();
+    initializeScroll()
+    setupPaginationListener()
 
   });
 
