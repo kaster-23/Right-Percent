@@ -1148,7 +1148,7 @@ ballTl.fromTo(".swiper", {
               previousWidth = currentWidth; 
           }
       });
-  /*
+  
       
       // timeline main (ballTl)
       const ballTl = gsap.timeline({
@@ -1157,6 +1157,7 @@ ballTl.fromTo(".swiper", {
           pin: true,
           start: "top 10%",
           end: '+=1000',
+          invalidateOnRefresh: true,
           scrub: 0,
         },
         // onComplete: () => {
@@ -1233,6 +1234,7 @@ ballTl.fromTo(".swiper", {
           start: "top top",
           end: "+=300",
           pin: true,
+          invalidateOnRefresh: true,
           scrub: 1,
           onUpdate: function (self) {
             // Calculate the progression
@@ -1246,7 +1248,7 @@ ballTl.fromTo(".swiper", {
           },
         },
       });
-*/ 
+
 
 
       // MARQUEE ON SCROLL
