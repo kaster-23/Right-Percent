@@ -1,70 +1,31 @@
-import { ScrollTrigger, ScrollSmoother } from "./gsap/all.js";
+//import gsap from "../dist/gsap.js";
+import { ScrollTrigger } from "./gsap/all.js";
+import { ScrollSmoother } from "./gsap/all.js";
+
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
-
 function blog() {
-  const blogSection = document.querySelector('#blog');
-  const filterButtons = document.querySelectorAll(".filter-item");
-  const cards = document.querySelectorAll(".card");
 
-  let triggers = [];
 
-  // Function to update the batch after filtering cards
-  function createNewBatch() {
-    const visibleCards = document.querySelectorAll(".card:not(.hidden)");
-
-    // Revert previous triggers
-    if (triggers.length) {
-      triggers.forEach((st) => st.revert());
-    }
-
-    // Reset initial styles
-    gsap.set(".card", {
-      y: 30,
-      opacity: 0
-    });
-
-    // Batch animation for the visible cards
-    triggers = ScrollTrigger.batch(visibleCards, {
-      onEnter: (batch) =>
-        gsap.to(batch, {
-          ease: "power2.out",
-          stagger: 0.08,
-          duration: 0.5,
-          y: 0,
-          opacity: 1
-        }),
-      start: "top 90%",
-      end: "bottom 10%",
-      markers: true
-    });
-  }
-
-  // Call the function initially to create the batch
-  createNewBatch();
-
-  // Add click event listener to the filter buttons
-  filterButtons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filterValue = button.getAttribute("data-filter");
-
-      // Show/hide cards based on the filter
-      cards.forEach((card) => {
-        const cardCategory = card.getAttribute("data-category");
-        if (filterValue === "all" || cardCategory === filterValue) {
-          card.classList.remove("hidden");
-        } else {
-          card.classList.add("hidden");
-        }
-      });
-
-      // Call createNewBatch to animate the visible cards after the filter change
-      createNewBatch();
+const blogSection = document.querySelector('#blog')
+function setupPaginationListener() {
+  
+  const paginationButtons = document.querySelectorAll('.pagination-current'); 
+  paginationButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      setTimeout(() => {
+        destroyScroll(); 
+        initializeScroll();
+        blogSection?.scrollIntoView({ behavior: 'smooth' });
+      }, 300); 
     });
   });
+}
 
-  // Additional code for ScrollSmoother, ScrollTrigger.matchMedia, and other animations
-  document.addEventListener('DOMContentLoaded', () => {
-    const smoother = ScrollSmoother.create({
+
+  // smooth scroll
+  document.addEventListener('load', () => {
+    let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
       content: '.smooth-content',
       smooth: 1,
@@ -72,20 +33,24 @@ function blog() {
       effects: true,
     });
 
-    ScrollTrigger.refresh();
+  // Refrescar ScrollTrigger
+  ScrollTrigger.refresh();
+    setupPaginationListener()
+
   });
 
-  // Refresh ScrollTrigger when clicking on specific links
-  let links = document.querySelectorAll(".cc-refresh");
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      setTimeout(() => {
-        ScrollTrigger.refresh()
-      }, 300);
-    });
-  });
+ // refresh scrolltrigger
+let links = document.querySelectorAll(".cc-refresh")
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 300)
+  })
+})
 
- // BG nav dropdown open
+
+  // BG nav dropdown open
 
   document.addEventListener("DOMContentLoaded", function () {
     const dropdowns = document.querySelectorAll(".c-dropdown");
@@ -214,6 +179,9 @@ function blog() {
 
     },
   })
+
 }
+
+export default blog
 
 export default blog;
