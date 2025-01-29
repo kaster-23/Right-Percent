@@ -1161,9 +1161,9 @@ ballTl.fromTo(".swiper", {
           pinSpacing: false,
           pin: true,
           start: "top 10%",
-          end: '+=800',
+          end: '+=1000',
           invalidateOnRefresh: true,
-          scrub: 1,
+          scrub: 0,
         },
         // onComplete: () => {
         //   // Start splitTextTl at the end of ballTl
@@ -1238,7 +1238,7 @@ ballTl.fromTo(".swiper", {
           trigger: "[yellow-ball-section]",
           start: "top top",
           end: "+=300",
-          pinSpacing: false,
+          //pinSpacing: false,
           pin: true,
           invalidateOnRefresh: true,
           scrub: 1,
