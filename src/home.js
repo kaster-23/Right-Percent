@@ -1158,7 +1158,7 @@ ballTl.fromTo(".swiper", {
           start: "top 10%",
           end: '+=1000',
           invalidateOnRefresh: true,
-          scrub: 0,
+          scrub: 1,
         },
         // onComplete: () => {
         //   // Start splitTextTl at the end of ballTl
