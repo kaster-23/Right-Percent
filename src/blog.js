@@ -127,6 +127,7 @@ links.forEach(link => {
     }
   });
 
+  /*
 
 
   ScrollTrigger.matchMedia({
@@ -148,6 +149,7 @@ links.forEach(link => {
     },
     // medium
     "(min-width: 767px) and (max-width: 991px)": function () {
+      /&
       // Marquee on scroll
 
       gsap.to(".c-scroll-marquee-wrapper", {
@@ -163,7 +165,7 @@ links.forEach(link => {
 
     },
     // small
-    "(max-width: 480px)": function () {
+    "(max-width: 767px)": function () {
       // Marquee on scroll
 
       gsap.to(".c-scroll-marquee-wrapper", {
@@ -179,6 +181,7 @@ links.forEach(link => {
 
     },
   })
+  /*
 
 }
 
