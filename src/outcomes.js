@@ -196,6 +196,7 @@ const targetSelectors = [
      
       // Marquee on scroll
 
+        /*
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
           trigger: ".c-scroll-marquee-wrapper",
@@ -205,6 +206,7 @@ const targetSelectors = [
         xPercent: -20,
         ease: "quart.easeOut",
       });
+      */
 
         // GROWING IMG CTA FOOTER
 
@@ -256,6 +258,7 @@ const targetSelectors = [
         });
      
       // Marquee on scroll
+        /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -266,7 +269,7 @@ const targetSelectors = [
         xPercent: -20,
         ease: "quart.easeOut",
       });
-
+*/
  // GROWING IMG CTA FOOTER
 
       gsap.to(".c-img-cta-footer.cc-one", {
@@ -308,9 +311,10 @@ const targetSelectors = [
       });
     },
     // small
-    "(max-width: 480px)": function () {
+    "(max-width: 767px)": function () {
       // Marquee on scroll
 
+        /*
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
           trigger: ".c-scroll-marquee-wrapper",
@@ -320,6 +324,7 @@ const targetSelectors = [
         xPercent: -80,
         ease: "quart.easeOut",
       });
+      */
   // GROWING IMG CTA FOOTER
 
       gsap.to(".c-img-cta-footer.cc-one", {
