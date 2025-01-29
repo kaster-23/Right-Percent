@@ -1164,7 +1164,7 @@ ballTl.fromTo(".swiper", {
         //   splitTextTl.set('.cc-split-chars', { opacity: 1 });
         // },
       });
-*/ 
+
       // add animations to the main timeline (ballTl)
       ballTl.to(ball, {
         left: '100vw',
@@ -1245,7 +1245,7 @@ ballTl.fromTo(".swiper", {
           },
         },
       });
-
+*/ 
 
 
       // MARQUEE ON SCROLL
