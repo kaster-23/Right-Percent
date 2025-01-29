@@ -15,8 +15,8 @@ function setupPaginationListener() {
   paginationButtons.forEach(button => {
     button.addEventListener('click', () => {
       setTimeout(() => {
-        destroyScroll(); 
-        initializeScroll();
+        ScrollTrigger.refresh();
+        
         blogSection?.scrollIntoView({ behavior: 'smooth' });
       }, 300); 
     });
