@@ -778,7 +778,7 @@ ballTl.fromTo(".swiper", {
       var timeline = gsap.timeline({
         scrollTrigger: {
           trigger: "[yellow-ball-section]",
-          start: "top top",
+          start: "10% top",
           end: "+=100%",
           pin: true,
           scrub: 1,
