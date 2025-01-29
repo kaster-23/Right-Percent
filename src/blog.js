@@ -26,7 +26,7 @@ function setupPaginationListener() {
 
 
   // smooth scroll
-  document.addEventListener('load', () => {
+  document.addEventListener('DOMContentLoaded', () => {
     console.log('js connected')
     let smoother = ScrollSmoother.create({
       wrapper: '.smooth-wrapper',
