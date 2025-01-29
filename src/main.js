@@ -188,7 +188,7 @@ ScrollTrigger.matchMedia({
         end: "bottom -10%",
         scrub: true,
       },
-      y: "-20rem",
+      y: "-40rem",
       ease: "quart.easeOut",
     });
 
