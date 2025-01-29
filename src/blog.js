@@ -184,4 +184,3 @@ links.forEach(link => {
 
 export default blog
 
-export default blog;
