@@ -30,6 +30,7 @@ function destroyScroll() {
   ScrollTrigger.getAll().forEach(trigger => trigger.kill());
 }
 
+const blogSection = document.querySelector('#blog')
 function setupPaginationListener() {
   
   const paginationButtons = document.querySelectorAll('.pagination-current'); 
@@ -37,7 +38,8 @@ function setupPaginationListener() {
     button.addEventListener('click', () => {
       setTimeout(() => {
         destroyScroll(); 
-        initializeScroll(); 
+        initializeScroll();
+        blogSection?.scrollIntoView({ behavior: 'smooth' });
       }, 300); 
     });
   });
