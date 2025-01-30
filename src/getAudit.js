@@ -6,7 +6,6 @@ import { SplitText } from "./gsap/all.js";
 gsap.registerPlugin(ScrollTrigger, SplitText);
 function getAudit() {
 
-  // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
 
     ScrollTrigger.refresh();
