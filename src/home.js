@@ -612,7 +612,7 @@ function home() {
             const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-title-s')
 
   
-
+        console.log({sticktContainers})
         sticktContainers.forEach((container) => {
           const title = container.querySelector('.c-title-s')
           const text = container.querySelector('.c-text-s')
