@@ -1,9 +1,8 @@
 //import gsap from "../dist/gsap.js";
 import { ScrollTrigger } from "./gsap/all.js";
-import { ScrollSmoother } from "./gsap/all.js";
 
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+gsap.registerPlugin(ScrollTrigger);
 function blog() {
 
 
@@ -25,13 +24,7 @@ function setupPaginationListener() {
 
   // smooth scroll
   document.addEventListener('load', () => {
-    let smoother = ScrollSmoother.create({
-      wrapper: '.smooth-wrapper',
-      content: '.smooth-content',
-      smooth: 1,
-      smoothTouch: 0.1,
-      effects: true,
-    });
+
 
   // Refrescar ScrollTrigger
   ScrollTrigger.refresh();
