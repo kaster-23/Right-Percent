@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 function home() {
 
   // smooth scroll
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('load', () => {
 
   
   window.addEventListener("resize", () => {
