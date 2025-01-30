@@ -1,12 +1,26 @@
 //import gsap from "../dist/gsap.js";
 import { ScrollTrigger } from "./gsap/all.js";
+import { ScrollSmoother } from "./gsap/all.js";
 import { SplitText } from "./gsap/all.js";
 
 
-gsap.registerPlugin(ScrollTrigger, SplitText);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 function home() {
 
+  // smooth scroll
+  document.addEventListener('DOMContentLoaded', () => {
+    let smoother = ScrollSmoother.create({
+        wrapper: '.smooth-wrapper',
+        content: '.smooth-content',
+        smooth: 1,
+        smoothTouch: 0.1, 
+        effects: true
+      });
+    
+    ScrollTrigger.refresh();
+    
 
+  });
 
   // refresh scrolltrigger
   let links = document.querySelectorAll(".cc-refresh")
@@ -588,9 +602,8 @@ function home() {
             trigger: ".c-sticky-wrapper .row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
-            markers: true,
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 75}`,
-           // pinSpacing: false,
+            pinSpacing: false,
           });
 
 
@@ -602,7 +615,7 @@ function home() {
             const stickyTitles = document.querySelectorAll('.c-sticky-right-container .c-title-s')
 
   
-        console.log({sticktContainers})
+
         sticktContainers.forEach((container) => {
           const title = container.querySelector('.c-title-s')
           const text = container.querySelector('.c-text-s')
@@ -612,7 +625,6 @@ function home() {
             start: "top 55%", 
             end: "bottom center", 
             trigger: container,
-            markers: true,
             onEnter: () => {
               stickyTitles.forEach((t) => t.style.color = "#fff"); 
               title.style.color = "#62C6A5"; 
@@ -810,7 +822,6 @@ ballTl.fromTo(".swiper", {
 
 
       // MARQUEE ON SCROLL
-      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -821,7 +832,7 @@ ballTl.fromTo(".swiper", {
         xPercent: -20,
         ease: "quart.easeOut",
       });
-*/
+
       // GROWING IMG CTA FOOTER
 
       gsap.to(".c-img-cta-footer.cc-one", {
@@ -1038,7 +1049,6 @@ ballTl.fromTo(".swiper", {
       }); */
 
       // MARQUEE ON SCROLL
-      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -1049,7 +1059,6 @@ ballTl.fromTo(".swiper", {
         xPercent: -20,
         ease: "quart.easeOut",
       });
-      */
 
       // GROWING IMG CTA FOOTER
 
@@ -1145,12 +1154,11 @@ ballTl.fromTo(".swiper", {
       const ballTl = gsap.timeline({
         scrollTrigger: {
           trigger: '[yellow-ball-section]',
-          pinSpacing: false,
           pin: true,
           start: "top 10%",
           end: '+=1000',
           invalidateOnRefresh: true,
-          scrub: 0,
+          scrub: 1,
         },
         // onComplete: () => {
         //   // Start splitTextTl at the end of ballTl
@@ -1225,7 +1233,6 @@ ballTl.fromTo(".swiper", {
           trigger: "[yellow-ball-section]",
           start: "top top",
           end: "+=300",
-          pinSpacing: false,
           pin: true,
           invalidateOnRefresh: true,
           scrub: 1,
@@ -1245,7 +1252,6 @@ ballTl.fromTo(".swiper", {
 
 
       // MARQUEE ON SCROLL
-      /*
 
       gsap.to(".c-scroll-marquee-wrapper", {
         scrollTrigger: {
@@ -1256,7 +1262,6 @@ ballTl.fromTo(".swiper", {
         xPercent: -80,
         ease: "quart.easeOut",
       });
-      */
 
       // GROWING IMG CTA FOOTER
 
@@ -1304,5 +1309,4 @@ ballTl.fromTo(".swiper", {
 }
 
 export default home
-
 
