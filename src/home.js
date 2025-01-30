@@ -601,7 +601,7 @@ function home() {
             start: "top center",
             markers: true,
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 75}`,
-            pinSpacing: false,
+           // pinSpacing: false,
           });
 
 
