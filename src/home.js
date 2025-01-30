@@ -599,6 +599,7 @@ function home() {
             trigger: ".c-sticky-wrapper .row",
             pin: ".c-sticky-left-wrapper",
             start: "top center",
+            markers: true,
             end: () => `+=${document.querySelector(".c-sticky-wrapper").offsetHeight - document.querySelector(".c-sticky-left-wrapper").offsetHeight - 75}`,
             pinSpacing: false,
           });
@@ -622,6 +623,7 @@ function home() {
             start: "top 55%", 
             end: "bottom center", 
             trigger: container,
+            markers: true,
             onEnter: () => {
               stickyTitles.forEach((t) => t.style.color = "#fff"); 
               title.style.color = "#62C6A5"; 
