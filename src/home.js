@@ -1,21 +1,14 @@
 //import gsap from "../dist/gsap.js";
 import { ScrollTrigger } from "./gsap/all.js";
-import { ScrollSmoother } from "./gsap/all.js";
 import { SplitText } from "./gsap/all.js";
 
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+gsap.registerPlugin(ScrollTrigger, SplitText);
 function home() {
 
   // smooth scroll
   document.addEventListener('DOMContentLoaded', () => {
-    let smoother = ScrollSmoother.create({
-        wrapper: '.smooth-wrapper',
-        content: '.smooth-content',
-        smooth: 1,
-        smoothTouch: 0.1, 
-        effects: true
-      });
+
   
   window.addEventListener("resize", () => {
     ScrollTrigger.refresh();
